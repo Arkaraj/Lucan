@@ -1,11 +1,11 @@
 import express from "express";
 const router = express.Router();
-import articleRouter from "./articles.routes";
+import gadgetRouter from "./gadgets.routes";
 
 router.get("/", (_, res) => {
-  res.status(200).send("Routes: /articles");
+  res.status(200).send("Routes: /gadgets");
 });
 
-router.use("/articles", articleRouter);
+router.use("/gadgets", gadgetRouter);
 
 export default router;
